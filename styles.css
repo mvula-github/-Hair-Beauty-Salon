@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+button {
+  color: white;
+  background-color: navy;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(4, 4, 137);
+  transition: 0.5s ease-in;
+}
+
+.welcome-section {
+  height: 60vh;
+  background-image: url("./pic1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4.5rem;
+  width: 100%;
+  background-size: 100%;
+}
+
+.welcome-section h1 {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.welcome-section p {
+  color: white;
+  font-size: 15px;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-book {
+  color: white;
+  background-color: navy;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-book:hover {
+  background-color: white;
+  color: rgb(4, 4, 137);
+  transition: 0.5s ease-in;
+}
+
+/* Our Services */
+.services-section {
+  padding: 4.5rem;
+  background: rgb(230, 239, 255);
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.each-service {
+  padding: 20px;
+}
+
+.each-service h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.each-service p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* MEET THE TEAM*/
+.team-section {
+  padding: 4.5rem;
+  background: rgb(230, 239, 255);
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.team img {
+  width: 250px;
+  height: 250px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.each-member h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.each-member p {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Galary of Our Work*/
+.gallery-section {
+  background-color: navy;
+  padding: 4.5rem;
+  color: white;
+}
+
+.gallery {
+  background-color: rgb(60, 145, 214);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  gap: 3rem;
+}
+
+.each-image {
+  margin: 40px 0;
+}
+
+.each-image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.each-image h4 {
+  font-size: 20px;
+  width: 250px;
+}
+
+.each-image p {
+  font-size: 15px;
+  width: 250px;
+}
+
+/* Schedule and appointment */
+.appointment-section {
+  background-color: rgb(60, 145, 214);
+  padding: 4.5rem;
+  color: white;
+}
+
+.split {
+  background-color: navy;
+  padding: 30px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.split img {
+  width: 400px;
+  height: 400px;
+}
+
+.appointments h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.appointments p {
+  font-size: 15px;
+  padding-left: 20px;
+  width: 450px;
+}
+
+.appointments h5 {
+  color: navy;
+  background-color: white;
+  width: 100px;
+  font-size: 15px;
+  margin: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.appointments h5:hover {
+  background-color: rgb(60, 145, 214);
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+.appointments a {
+  text-decoration: none;
+}
+
+/* Promotions */
+.promotion-section {
+  background-color: rgb(60, 145, 214);
+  padding: 4.5rem;
+  color: white;
+}
+
+.promotions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.each-promo {
+  width: 33%;
+}
+
+.center-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+/* Store Location */
+.location-section {
+  background-color: navy;
+  padding: 4.5rem;
+  color: white;
+}
+
+.location-section h2 {
+  text-align: center;
+}
+
+.location h5 {
+  font-size: 20px;
+}
+.location p {
+  text-indent: 20px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+@media (max-width: 769px) {
+  h2 {
+    text-align: center;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 3rem;
+  }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .location-section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  h2 {
+    font-size: 25px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+  }
+
+  .welcome-section {
+    height: 30vh;
+    padding: 2rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 25px;
+    margin: 2px;
+  }
+
+  .welcome-section p {
+    font-size: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn-book {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .services-section {
+    padding: 2.5rem;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .each-service h4 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .each-service p {
+    font-size: 10px;
+  }
+
+  .team-section {
+    padding: 2.5rem;
+  }
+
+  .team img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+  }
+
+  .each-member h4 {
+    font-size: 15px;
+  }
+
+  .each-member p {
+    font-size: 10px;
+  }
+
+  .gallery-section {
+    padding: 2.5rem;
+  }
+
+  .gallery {
+    padding: 20px 0;
+    gap: 2rem;
+  }
+
+  .each-image {
+    margin: 20px 0;
+    align-items: center;
+  }
+
+  .each-image img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .each-image h4 {
+    font-size: 15px;
+    width: 150px;
+  }
+
+  .each-image p {
+    font-size: 10px;
+    width: 150px;
+  }
+
+  .appointment-section {
+    padding: 2.5rem;
+  }
+
+  .split img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .appointments h4 {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+
+  .appointments p {
+    font-size: 10px;
+    padding-left: 15px;
+    width: 200px;
+  }
+
+  .appointments h5 {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 10p;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .promotions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .promotion-section h4 {
+    font-size: 15px;
+  }
+
+  .promotion-section p {
+    font-size: 10px;
+  }
+
+  .each-promo {
+    width: 100%;
+  }
+
+  .location-section {
+    padding: 2.5rem;
+  }
+
+  .location h5 {
+    font-size: 15px;
+  }
+
+  .location p {
+    text-indent: 20px;
+    padding: 10px 0;
+    font-size: 10px;
+  }
+}
